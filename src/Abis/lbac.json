@@ -4,122 +4,22 @@
             "inputs": [
                 {
                     "internalType": "string",
-                    "name": "name_",
+                    "name": "name",
                     "type": "string"
                 },
                 {
                     "internalType": "string",
-                    "name": "symbol_",
+                    "name": "symbol",
                     "type": "string"
                 },
                 {
                     "internalType": "string",
-                    "name": "unRevealUri_",
+                    "name": "baseURI",
                     "type": "string"
-                },
-                {
-                    "internalType": "string",
-                    "name": "baseTokenUri_",
-                    "type": "string"
-                },
-                {
-                    "internalType": "address",
-                    "name": "coinAddress",
-                    "type": "address"
-                },
-                {
-                    "internalType": "address",
-                    "name": "coinOwnerAddress",
-                    "type": "address"
-                },
-                {
-                    "internalType": "address",
-                    "name": "LBACCoinAddress",
-                    "type": "address"
-                },
-                {
-                    "internalType": "address",
-                    "name": "lilBananaCoinAddress",
-                    "type": "address"
-                },
-                {
-                    "internalType": "address[]",
-                    "name": "beneficiaries_",
-                    "type": "address[]"
                 }
             ],
             "stateMutability": "nonpayable",
             "type": "constructor"
-        },
-        {
-            "inputs": [],
-            "name": "ApprovalCallerNotOwnerNorApproved",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "ApprovalQueryForNonexistentToken",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "ApproveToCaller",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "BalanceQueryForZeroAddress",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "MintERC2309QuantityExceedsLimit",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "MintToZeroAddress",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "MintZeroQuantity",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "OwnerQueryForNonexistentToken",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "OwnershipNotInitializedForExtraData",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "TransferCallerNotOwnerNorApproved",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "TransferFromIncorrectOwner",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "TransferToNonERC721ReceiverImplementer",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "TransferToZeroAddress",
-            "type": "error"
-        },
-        {
-            "inputs": [],
-            "name": "URIQueryForNonexistentToken",
-            "type": "error"
         },
         {
             "anonymous": false,
@@ -176,37 +76,6 @@
             "inputs": [
                 {
                     "indexed": true,
-                    "internalType": "uint256",
-                    "name": "fromTokenId",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "toTokenId",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "from",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "to",
-                    "type": "address"
-                }
-            ],
-            "name": "ConsecutiveTransfer",
-            "type": "event"
-        },
-        {
-            "anonymous": false,
-            "inputs": [
-                {
-                    "indexed": true,
                     "internalType": "address",
                     "name": "previousOwner",
                     "type": "address"
@@ -248,26 +117,14 @@
         },
         {
             "inputs": [],
-            "name": "LBACHoldersMintPrice",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
+            "name": "Launch",
+            "outputs": [],
+            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "name": "LBACHoldersSupply",
+            "inputs": [],
+            "name": "MAX_SUPPLY",
             "outputs": [
                 {
                     "internalType": "uint256",
@@ -280,53 +137,41 @@
         },
         {
             "inputs": [],
-            "name": "addresses",
+            "name": "ORIGINAL_PROVENANCE",
             "outputs": [
                 {
-                    "internalType": "address",
-                    "name": "coinAddress",
-                    "type": "address"
-                },
-                {
-                    "internalType": "address",
-                    "name": "coinOwnerAddress",
-                    "type": "address"
-                },
-                {
-                    "internalType": "address",
-                    "name": "NFTAddress",
-                    "type": "address"
-                },
-                {
-                    "internalType": "address",
-                    "name": "lilBCoinAddress",
-                    "type": "address"
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
                 }
             ],
             "stateMutability": "view",
             "type": "function"
         },
         {
-            "inputs": [
-                {
-                    "internalType": "address[]",
-                    "name": "recipients",
-                    "type": "address[]"
-                },
-                {
-                    "internalType": "uint256[]",
-                    "name": "numberOfTokensPerWallet",
-                    "type": "uint256[]"
-                },
+            "inputs": [],
+            "name": "REVEAL_TIMESTAMP",
+            "outputs": [
                 {
                     "internalType": "uint256",
-                    "name": "numberOfTokensToAirdrop",
+                    "name": "",
                     "type": "uint256"
                 }
             ],
-            "name": "airDrop",
-            "outputs": [],
-            "stateMutability": "nonpayable",
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "SALE_START_TIMESTAMP",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
             "type": "function"
         },
         {
@@ -368,7 +213,7 @@
         },
         {
             "inputs": [],
-            "name": "baseTokenUri",
+            "name": "baseURI",
             "outputs": [
                 {
                     "internalType": "string",
@@ -382,58 +227,21 @@
         {
             "inputs": [
                 {
-                    "internalType": "address[]",
-                    "name": "newBeneficiaries",
-                    "type": "address[]"
+                    "internalType": "string",
+                    "name": "baseURI",
+                    "type": "string"
                 }
             ],
-            "name": "changeBeneficiaries",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "supply",
-                    "type": "uint256"
-                }
-            ],
-            "name": "changeMaxSupply",
+            "name": "changeBaseURI",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
         },
         {
             "inputs": [],
-            "name": "claim",
+            "name": "finalizeStartingIndex",
             "outputs": [],
             "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "name": "claimingDetails",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "lastClaimed",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "claimed",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
             "type": "function"
         },
         {
@@ -450,6 +258,32 @@
                     "internalType": "address",
                     "name": "",
                     "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getMaxAmount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getPrice",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
                 }
             ],
             "stateMutability": "view",
@@ -480,13 +314,19 @@
             "type": "function"
         },
         {
-            "inputs": [],
-            "name": "maxSupply",
-            "outputs": [
+            "inputs": [
                 {
                     "internalType": "uint256",
-                    "name": "",
+                    "name": "index",
                     "type": "uint256"
+                }
+            ],
+            "name": "isMintedBeforeReveal",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
                 }
             ],
             "stateMutability": "view",
@@ -496,39 +336,13 @@
             "inputs": [
                 {
                     "internalType": "uint256",
-                    "name": "amount",
+                    "name": "numberOfTokens",
                     "type": "uint256"
                 }
             ],
             "name": "mint",
             "outputs": [],
             "stateMutability": "payable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "mintLimit",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "mintPrice",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
             "type": "function"
         },
         {
@@ -578,42 +392,22 @@
         },
         {
             "inputs": [],
-            "name": "pendingRewards",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
             "name": "renounceOwnership",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
         },
         {
-            "inputs": [],
-            "name": "revealCollection",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "revealed",
-            "outputs": [
+            "inputs": [
                 {
-                    "internalType": "bool",
-                    "name": "",
-                    "type": "bool"
+                    "internalType": "uint256",
+                    "name": "numTokens",
+                    "type": "uint256"
                 }
             ],
-            "stateMutability": "view",
+            "name": "reserveGiveaway",
+            "outputs": [],
+            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
@@ -668,6 +462,19 @@
             "type": "function"
         },
         {
+            "inputs": [],
+            "name": "saleActive",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
             "inputs": [
                 {
                     "internalType": "address",
@@ -686,68 +493,29 @@
             "type": "function"
         },
         {
-            "inputs": [
-                {
-                    "internalType": "string",
-                    "name": "baseTokenUri_",
-                    "type": "string"
-                }
-            ],
-            "name": "setBaseTokenUri",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
+            "inputs": [],
+            "name": "startingIndex",
+            "outputs": [
                 {
                     "internalType": "uint256",
-                    "name": "price",
+                    "name": "",
                     "type": "uint256"
                 }
             ],
-            "name": "setLBACHoldersMintPrice",
-            "outputs": [],
-            "stateMutability": "nonpayable",
+            "stateMutability": "view",
             "type": "function"
         },
         {
-            "inputs": [
+            "inputs": [],
+            "name": "startingIndexBlock",
+            "outputs": [
                 {
                     "internalType": "uint256",
-                    "name": "limit",
+                    "name": "",
                     "type": "uint256"
                 }
             ],
-            "name": "setMintLimit",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "price",
-                    "type": "uint256"
-                }
-            ],
-            "name": "setMintPrice",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "string",
-                    "name": "revealUri_",
-                    "type": "string"
-                }
-            ],
-            "name": "setUnRevealUrl",
-            "outputs": [],
-            "stateMutability": "nonpayable",
+            "stateMutability": "view",
             "type": "function"
         },
         {
@@ -786,7 +554,50 @@
             "inputs": [
                 {
                     "internalType": "uint256",
-                    "name": "tokenId_",
+                    "name": "index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "tokenByIndex",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                }
+            ],
+            "name": "tokenOfOwnerByIndex",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
                     "type": "uint256"
                 }
             ],
@@ -852,20 +663,7 @@
         },
         {
             "inputs": [],
-            "name": "unRevealUri",
-            "outputs": [
-                {
-                    "internalType": "string",
-                    "name": "",
-                    "type": "string"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "withdrawAll",
+            "name": "withdraw",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
